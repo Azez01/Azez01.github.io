@@ -5,38 +5,23 @@
     <link rel="stylesheet" href="styling.css" type="text/css" />
   </head>
   <body>
-    <!-- [OPEN] {header} -->
-    <header class="Header">
-      <div class="mainHeaderController">
-        <div class="headerComponentOne"></div>
-        <div class="headerComponentTwo"></div>
-      </div>
+    <header>
+      <a href="#" class="logo">logo</a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
     </header>
-    <!-- [CLOSE] {header} -->
-
-    <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
-    <!-- [OPEN] {Page_Content} -->
-    <h1 id="A">[(A..........(]{B}[)..........A)]</h1>
-    <div class="MainPageContentController">
-      <div class="subContentOne"></div>
-      <div class="subContentTwo"></div>
-      <div class="subContentThree"></div>
-      <div class="subContentFour"></div>
-      <div class="subContentFive"></div>
-      <div class="subContentSix"></div>
-    </div>
-    <!-- [CLOSW] {Page_Content} -->
-
-    <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
-
-    <!-- [CLOSE] {Footer} -->
-    <footer>
-      <div class="mainFooterController">
-        <div class="footerComponentOne"></div>
-        <div class="footerComponentTwo"></div>
-      </div>
-    </footer>
-
-    <!-- [CLOSE] {Footer} -->
+    <section class="banner"></section>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+<footer>
+<p><h2>contact</h2></p>
+</footer>
   </body>
 </html>
