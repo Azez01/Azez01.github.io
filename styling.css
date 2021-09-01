@@ -78,3 +78,8 @@ h2{
 .hrr{
   border-color: rgb(255, 217, 0);
 }
+h1{
+  padding-top: 50%;
+  padding-left: 50%;
+  color: rgb(255, 217, 0);
+}
