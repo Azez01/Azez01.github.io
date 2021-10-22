@@ -24,6 +24,7 @@ header {
   z-index: 100000;
 }
 header .logo {
+  padding-left: 2%;
   position: relative;
   font-weight: 700;
   color: #fff;
