@@ -2,5 +2,6 @@ body {
   background: #000;
 }
 div {
-  background: #fff
+  background-color: #fff;
+  color: #ff0000;
 }
