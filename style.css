@@ -1,13 +1,16 @@
 @font-face {
   font-family: "Ubuntu";
-  src: local(""), url("ubuntu-v15-latin-regular.woff") format("woff"), url("Ubuntu-Regular.ttf") format("truetype");
+  src: local(""), url("Ubuntu-Regular.ttf") format("truetype"), url("ubuntu-v15-latin-regular.woff") format("woff");
+  font-weight: bold;
 }
 
 body {
-  height: 1000px;
   margin: 0%;
   font-family: Ubuntu;
-  background-color: rgb(221, 235, 243);
+  background: rgb(221, 235, 243);
+  background: linear-gradient(0deg, rgba(221, 235, 243, 1) 0%, rgba(193, 214, 237, 1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .header {
@@ -18,33 +21,62 @@ body {
   left: 50%;
   transform: translateX(-50%);
   background-color: rgb(221, 235, 243);
-  transition: 500ms;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(47, 96, 153);
+  border-bottom-width: 1px;
+  transition-duration: 200ms;
 }
 
 .header a {
   margin-right: 50%;
   text-decoration: none;
-  font-size: xx-large;
-  color: rgb(6, 42, 83);
+  font-size: 40px;
+  color: rgb(47, 96, 153);
+  transition: 100ms;
 }
 
-.brl {
-  padding: 30%;
-  border-top-color: rgb(144, 177, 211);
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
-}
-
-.contents {
-  padding-top: 10vh;
-  padding-left: 10%;
-  padding-right: 10%;
+.cardsContainer {
+  display: flexbox;
   text-align: left;
 }
 
+h2 {
+  display: inline;
+  margin: 0% 0% 0% -5%;
+}
+
+.cardsContainer .card1 {
+  padding: 5%;
+  margin: 5% 20% 2% 20%;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-width: 1px;
+  border-color: rgb(47, 96, 153);
+  border-style: solid;
+  background-color: rgb(221, 235, 243);
+}
+
+.cardsContainer .card1:hover {
+  box-shadow: 0px 1px 9px rgb(36, 45, 66);
+  transition: 200ms;
+}
+
+.cardsContainer .cardData {
+  padding: 0% 40% 0% 0%;
+}
+
+html:not([data-scroll="0"]) body {
+  transition: 100ms;
+}
+
 html:not([data-scroll="0"]) .header {
-  box-shadow: 0px 5px 10px #444;
-  background-color: rgb(186, 206, 218);
-  transition: 300ms;
+  box-shadow: 0px 1px 9px rgb(36, 45, 66);
+  padding: 1% 0% 1% 0%;
+  border-bottom-style: none;
+  transition-duration: 100ms;
+}
+
+html:not([data-scroll="0"]) a {
+  font-size: 30px;
+  transition: 100ms;
 }
