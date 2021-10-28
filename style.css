@@ -22,7 +22,7 @@ body {
 }
 
 .header a {
-  padding-right: 50%;
+  margin-right: 50%;
   text-decoration: none;
   font-size: xx-large;
   color: rgb(6, 42, 83);
