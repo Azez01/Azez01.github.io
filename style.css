@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/ubuntu-v15-latin-regular.woff");
+  src: local(""), url("fonts/ubuntu-v15-latin-regular.woff2") format("woff2"), url("fonts/Ubuntu-Regular.ttf") format("truetype"), url("fonts/ubuntu-v15-latin-regular.ttf") format("truetype");
+}
+
+body {
+  height: 1000px;
+  margin: 0%;
+  font-family: Ubuntu;
+  background-color: rgb(221, 235, 243);
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  padding: 1% 0% 1% 0%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(221, 235, 243);
+  transition: 800ms;
+}
+
+.header a {
+  padding-right: 50%;
+  text-decoration: none;
+  font-size: xx-large;
+  color: rgb(6, 42, 83);
+}
+
+.brl {
+  padding: 30%;
+  border-top-color: rgb(144, 177, 211);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.contents {
+  padding-top: 10vh;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: left;
+}
+
+html:not([data-scroll="0"]) .header {
+  box-shadow: 0px 5px 10px #444;
+  background-color: rgb(186, 206, 218);
+  transition: 300ms;
+}
