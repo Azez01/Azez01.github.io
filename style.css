@@ -1,8 +1,6 @@
 @font-face {
   font-family: "Ubuntu";
-  src: local(""), url("ubuntu-v15-latin-regular.woff") format("woff");
-  src: url("ubuntu-v15-latin-regular.woff");
-  
+  src: local(""), url("ubuntu-v15-latin-regular.woff") format("woff");  
 }
 
 body {
