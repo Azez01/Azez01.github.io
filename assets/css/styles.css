@@ -41,11 +41,6 @@ p {
   padding: 0;
 }
 
-.BGImg img {
-  background-image: url("../img/Image\ by\ rawpixel.coma\ on\ Freepik.jpg");
-  background-size: 10%;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
-}
 
 .pageHeader {
   display: flex;
